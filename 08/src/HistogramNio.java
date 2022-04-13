@@ -16,7 +16,7 @@ public class HistogramNio {
             List<String> lines = Files.readAllLines(Paths.get("lenBody.txt"));
             var histo = lines.stream()
                     .mapToDouble(
-                        line -> Math.floor(Double.valueOf(line)))
+                        line -> Math.floor(Double.parseDouble(line)))
                     .boxed()
                     .collect(Collectors.groupingBy(d -> d));
 

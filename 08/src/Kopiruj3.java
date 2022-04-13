@@ -1,7 +1,8 @@
 import java.io.*;
 
 public class Kopiruj3 {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) //throws IOException
+  {
    // byte stream
     File frName = new File("a.txt");
     try (

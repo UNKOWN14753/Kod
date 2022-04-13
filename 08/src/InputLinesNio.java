@@ -15,7 +15,7 @@ public class InputLinesNio {
           List<String> lines = Files.readAllLines(Paths.get("subor.txt"));
           for (String line : lines) System.out.println(line);
           lines.forEach(System.out::println);
-          System.out.println(lines.stream().mapToInt(line -> line.length()).sum());
+          System.out.println(lines.stream().mapToInt(String::length).sum());
           System.out.println(lines.stream().mapToLong(line ->line.chars().filter(ch -> ch=='*').count()).sum());
 
       } catch (IOException e) {
