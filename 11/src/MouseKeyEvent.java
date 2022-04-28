@@ -1,4 +1,6 @@
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,8 +15,9 @@ import javafx.stage.Stage;
 
 public class MouseKeyEvent extends Application {
 
-	Hashtable<String, TextField> h = new Hashtable<String, TextField>();
-	String[] event = { 
+	//Hashtable<String, TextField> h = new Hashtable<String, TextField>();
+	Map<String, TextField> h = new HashMap<String, TextField>();
+	String[] event = {
 			"keyPressed", "keyReleased", "keyTyped", 
 			"mouseClicked", "mouseEntered", 
 			"mouseExited", "mouseDragged"};
